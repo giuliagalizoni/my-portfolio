@@ -1,33 +1,40 @@
 import type { GetStaticProps, GetStaticPropsResult, NextPage } from 'next';
-
 import { getContentListData } from '../lib/content';
 
 import Head from 'next/head';
-import Link from 'next/link';
 import About from '../components/About';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import Work from '../components/Work';
+import Layout from '../components/Layout';
+
+import smileIcon from '../public/icons/smile.svg';
 
 export interface ContentListItem {
   id: string;
   summary: string;
   tech: string[];
   title: string;
+  contentHtml?: string;
 }
 
 const Home = ({ allContentData }: { allContentData: ContentListItem[] }) => {
-  console.log(allContentData);
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Giulia Galizoni</title>
       </Head>
-      <Link href='/teste'>Teste</Link>
-
+      <section>
+        <h1>Hi! I’m Giulia, a full-stack web developer focusing in MERN.</h1>
+        <p>
+          I bring passion and creativity in building engaging digital products.
+        </p>
+      </section>
       <About />
       <Work content={allContentData} />
-    </div>
+      <div>
+        <img src={smileIcon.src} alt='Smile Icon' />
+        <p>That’s all for now</p>
+      </div>
+    </Layout>
   );
 };
 

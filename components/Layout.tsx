@@ -1,9 +1,8 @@
-import { AppProps } from 'next/app';
-import { Props, ScriptProps } from 'next/script';
+import { ReactNode } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-const Layout = ({ children }: ScriptProps) => {
+const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Header />
