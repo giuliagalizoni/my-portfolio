@@ -1,4 +1,7 @@
-import type { GetStaticProps, GetStaticPropsResult, NextPage } from 'next';
+// import type { GetStaticProps, GetStaticPropsResult, NextPage } from 'next';
+
+import styles from '../styles/Home.module.css';
+
 import { getContentListData } from '../lib/content';
 
 import Head from 'next/head';
@@ -7,6 +10,7 @@ import Work from '../components/Work';
 import Layout from '../components/Layout';
 
 import smileIcon from '../public/icons/smile.svg';
+import Wrapper from '../components/Wrapper';
 
 export interface ContentListItem {
   id: string;
@@ -22,14 +26,22 @@ const Home = ({ allContentData }: { allContentData: ContentListItem[] }) => {
       <Head>
         <title>Giulia Galizoni</title>
       </Head>
-      <section>
-        <h1>Hi! I’m Giulia, a full-stack web developer focusing in MERN.</h1>
-        <p>
-          I bring passion and creativity in building engaging digital products.
-        </p>
-      </section>
+      <Wrapper>
+        <section className={styles.hero}>
+          <h1 className={styles.heroHeading}>
+            Hi! I’m Giulia, a full-stack web developer focusing in MERN.
+          </h1>
+          <p className={styles.heroSubheading}>
+            I bring passion and creativity in building engaging digital
+            products.
+          </p>
+        </section>
+      </Wrapper>
       <About />
-      <Work content={allContentData} />
+
+      <Wrapper>
+        <Work content={allContentData} />
+      </Wrapper>
       <div>
         <img src={smileIcon.src} alt='Smile Icon' />
         <p>That’s all for now</p>

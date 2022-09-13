@@ -1,13 +1,16 @@
 import Link from 'next/link';
+import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <header>
-      <nav>
-        <ul>
-          <li>
-            <Link href='/'>Giulia Galizoni</Link>
-          </li>
+      <nav className={styles.nav}>
+        <div>
+          <img src='./' />
+          <Link href='/'>Giulia Galizoni</Link>
+        </div>
+
+        <ul className={styles.navList}>
           <li>
             <a href='https://github.com/giuliagalizoni' target='_blank'>
               Github

@@ -1,10 +1,29 @@
+:root {
+  --acent-default: #fef6f6;
+  --neutral-default: #fff;
+  --neutral-subdued: #f6f7f9;
+  --neutral-border: #e7ecf4;
+  --text-default: #000;
+  --text-subdued: #7a818f;
+  --interaction-default: #c54541;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Radio Canada', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Domine', serif;
+}
+/* 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -13,4 +32,4 @@ body {
     color: white;
     background: black;
   }
-}
+} */

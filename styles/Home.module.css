@@ -1,0 +1,38 @@
+.hero {
+  margin: 144px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 731px;
+}
+
+.heroHeading {
+  margin: 0;
+  max-width: 731px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  /* or 48px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: var(--text-default);
+}
+
+.heroSubheading {
+  margin: 0;
+  max-width: 464px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: var(--text-default);
+}
