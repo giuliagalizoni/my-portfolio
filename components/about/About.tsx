@@ -16,7 +16,7 @@ const About = () => {
             and build things that have a positive impact in people's lives with
             innovative businesses.
           </p>
-          <img src={plant.src} alt='plant' />
+          <img src={plant.src} alt='plant' className={styles.img} />
         </div>
       </Wrapper>
     </section>

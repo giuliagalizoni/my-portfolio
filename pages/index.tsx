@@ -1,15 +1,10 @@
-// import type { GetStaticProps, GetStaticPropsResult, NextPage } from 'next';
-
+import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-
 import { getContentListData } from '../lib/content';
 
-import Head from 'next/head';
 import About from '../components/about/About';
 import Work from '../components/work/Work';
 import Layout from '../components/Layout';
-
-import smileIcon from '../public/icons/smile.svg';
 import Wrapper from '../components/Wrapper';
 
 export interface ContentListItem {
@@ -41,12 +36,8 @@ const Home = ({ allContentData }: { allContentData: ContentListItem[] }) => {
       <About />
 
       <Wrapper>
-        <Work content={allContentData} />
+        <Work content={allContentData} />{' '}
       </Wrapper>
-      <div>
-        <img src={smileIcon.src} alt='Smile Icon' />
-        <p>That’s all for now</p>
-      </div>
     </Layout>
   );
 };

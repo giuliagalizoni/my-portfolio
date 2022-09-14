@@ -1,40 +1,25 @@
 import Link from 'next/link';
+
 import Wrapper from '../Wrapper';
+import Button from '../button/Button';
+import Menu from '../menu/Menu';
+
 import styles from './Header.module.css';
+
+import photo from '../../public/images/Photo.png';
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <Wrapper>
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <img src='./' />
+            <img src={photo.src} alt="Giulia's picture" />
             <Link href='/'>
               <a className={styles.title}>Giulia Galizoni</a>
             </Link>
           </div>
-
-          <ul className={styles.navList}>
-            <li>
-              <a href='https://github.com/giuliagalizoni' target='_blank'>
-                Github
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://www.linkedin.com/in/giulia-galizoni-caversan/'
-                target='_blank'
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a target='_blank'>Resume</a>
-            </li>
-            <li>
-              <button className={styles.btn}>Contato</button>
-            </li>
-          </ul>
+          <Menu />
         </nav>
       </Wrapper>
     </header>

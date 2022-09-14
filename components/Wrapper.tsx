@@ -2,7 +2,13 @@ import { ReactNode } from 'react';
 
 const Wrapper = ({ children }: { children: ReactNode }) => {
   return (
-    <div style={{ width: '100%', maxWidth: '960px', margin: '0 auto' }}>
+    <div
+      style={{
+        maxWidth: '928px',
+        margin: '0 auto',
+        padding: '0 16px',
+      }}
+    >
       {children}
     </div>
   );

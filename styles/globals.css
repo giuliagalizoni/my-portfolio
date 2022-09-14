@@ -6,6 +6,14 @@
   --text-default: #000;
   --text-subdued: #7a818f;
   --interaction-default: #c54541;
+  --primary-default: #000;
+  --primary-hover: #2a2d33;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 html,
@@ -13,6 +21,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Radio Canada', sans-serif;
+  line-height: 1.4rem;
 }
 
 h1,

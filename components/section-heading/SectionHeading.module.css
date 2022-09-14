@@ -13,3 +13,14 @@
   text-align: center;
   letter-spacing: -0.01em;
 }
+
+@keyframes rotating {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 4s linear infinite;
+  animation: rotating 4s linear infinite;
+}

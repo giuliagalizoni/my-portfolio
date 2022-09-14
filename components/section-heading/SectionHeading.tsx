@@ -5,7 +5,7 @@ import styles from './SectionHeading.module.css';
 const SectionHeading = ({ sectionName }: { sectionName: string }) => {
   return (
     <div className={styles.heading}>
-      <img src={starIcon.src} alt='section icon' />
+      <img src={starIcon.src} alt='section icon' className={styles.rotating} />
       <h2>{sectionName}</h2>
     </div>
   );

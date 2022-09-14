@@ -38,8 +38,11 @@
 }
 
 .underline {
-  border-bottom: solid #fcdcdc 5px;
-  border-end-end-radius: 30%;
+  padding-bottom: 4px;
+
+  background-image: url(../public/images/underline.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 /* .underline::after {

@@ -1,6 +1,7 @@
 import { getAllContentIds, getContentData } from '../../lib/content';
 import { ContentListItem } from '..';
 import Layout from '../../components/Layout';
+import Wrapper from '../../components/Wrapper';
 
 export async function getStaticProps({ params }: { params: { id: string } }) {
   const postData = await getContentData(params.id);
@@ -20,11 +21,18 @@ export async function getStaticPaths() {
 }
 
 export default function Project({ postData }: { postData: ContentListItem }) {
-  const { title, contentHtml } = postData;
+  const { title, contentHtml, tech } = postData;
   return (
     <Layout>
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml! }} />
+      <Wrapper>
+        <h1>{title}</h1>
+        <ul>
+          {tech.map((el) => (
+            <li key={el}>{el}</li>
+          ))}
+        </ul>
+        <div dangerouslySetInnerHTML={{ __html: contentHtml! }} />
+      </Wrapper>
     </Layout>
   );
 }
