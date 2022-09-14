@@ -36,3 +36,22 @@
 
   color: var(--text-default);
 }
+
+.underline {
+  border-bottom: solid #fcdcdc 5px;
+  border-end-end-radius: 30%;
+}
+
+/* .underline::after {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 1;
+  top: 3;
+  height: 5px;
+  border: 1px solid #fcdcdc;
+  border-bottom: 0;
+  border-radius: 3em 3em 0 0;
+  content: '';
+  background: #fcdcdc;
+} */

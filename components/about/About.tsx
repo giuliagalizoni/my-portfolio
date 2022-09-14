@@ -1,14 +1,16 @@
-import SectionHeading from './SectionHeading';
-import plant from '../public/images/plant.svg';
-import Wrapper from './Wrapper';
+import SectionHeading from '../section-heading/SectionHeading';
+import plant from '../../public/images/plant.svg';
+import Wrapper from '../Wrapper';
+
+import styles from './About.module.css';
 
 const About = () => {
   return (
-    <section>
+    <section className={styles.bg}>
       <Wrapper>
-        <div>
+        <div className={styles.sectionContainer}>
           <SectionHeading sectionName='From teaching to coding' />
-          <p>
+          <p className={styles.text}>
             After 5 years in the educational field and a bachelor’s degree in
             language and literature, I changed my career to use my creativity
             and build things that have a positive impact in people's lives with

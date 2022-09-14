@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { ContentListItem } from '../pages';
-import SectionHeading from './SectionHeading';
+import { ContentListItem } from '../../pages';
+import SectionHeading from '../section-heading/SectionHeading';
 
 const Work = ({ content }: { content: ContentListItem[] }) => {
   return (

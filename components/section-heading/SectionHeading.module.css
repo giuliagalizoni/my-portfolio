@@ -1,0 +1,15 @@
+.heading {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading h2 {
+  margin: 24px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+
+  text-align: center;
+  letter-spacing: -0.01em;
+}
