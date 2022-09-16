@@ -8,7 +8,6 @@ import SectionHeading from '../section-heading/SectionHeading';
 import placeholder from '../../public/images/Placeholder.png';
 
 const Work = ({ content }: { content: ContentListItem[] }) => {
-  console.log(placeholder);
   return (
     <section>
       <SectionHeading sectionName='Work' />
