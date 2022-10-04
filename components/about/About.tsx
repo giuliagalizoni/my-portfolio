@@ -11,12 +11,9 @@ const About = () => {
 
   return (
     <>
-      <motion.div
-        className={styles.wave}
-        style={{ translateX: scrollYProgress }}
-      >
-        {/* <img src='/images/Hero-Top.svg' /> */}
-      </motion.div>
+      {/* <motion.div style={{ translateX: scrollYProgress }}>
+        <div className={styles.wave} />
+      </motion.div> */}
 
       <section className={styles.bg}>
         <Wrapper>

@@ -13,12 +13,12 @@ const Header = () => {
     <header className={styles.header}>
       <Wrapper>
         <nav className={styles.nav}>
-          <div className={styles.logo}>
-            <img src={photo.src} alt="Giulia's picture" />
-            <Link href='/'>
+          <Link href='/'>
+            <div className={styles.logo}>
+              <img src={photo.src} alt="Giulia's picture" />
               <a className={styles.title}>Giulia Galizoni</a>
-            </Link>
-          </div>
+            </div>
+          </Link>
           <Menu />
         </nav>
       </Wrapper>

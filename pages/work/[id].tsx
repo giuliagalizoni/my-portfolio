@@ -23,16 +23,19 @@ export async function getStaticPaths() {
 export default function Project({ postData }: { postData: ContentListItem }) {
   const { title, contentHtml, tech } = postData;
   return (
-    <Layout>
-      <Wrapper>
-        <h1>{title}</h1>
-        <ul>
-          {tech.map((el) => (
-            <li key={el}>{el}</li>
-          ))}
-        </ul>
-        <div dangerouslySetInnerHTML={{ __html: contentHtml! }} />
-      </Wrapper>
-    </Layout>
+    // background image goes here
+    <div>
+      <Layout>
+        <Wrapper>
+          <h1>{title}</h1>
+          <ul>
+            {tech.map((el) => (
+              <li key={el}>{el}</li>
+            ))}
+          </ul>
+          <div dangerouslySetInnerHTML={{ __html: contentHtml! }} />
+        </Wrapper>
+      </Layout>
+    </div>
   );
 }

@@ -2,23 +2,22 @@
   background-color: var(--acent-default);
 }
 
-/* .bg::before {
+.bg::before {
   content: '';
   display: block;
   height: 190px;
   background-color: var(--neutral-default);
   background-image: url('../../public/images/Hero-Top.svg');
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: start top;
 
-  /* animation */
-/* animation: bg-animation 20s linear infinite; */
-/* } */
+  animation: bg-animation 60s linear infinite;
+}
 
 .wave {
   /* width: 5000px;
   overflow: hidden; */
-
+  transform-origin: 0%;
   display: block;
   height: 190px;
   background-color: var(--neutral-default);
@@ -39,7 +38,7 @@
   height: 200px;
   background-color: var(--neutral-default);
   background-image: url('../../public/images/Hero-Bottom.svg');
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: start top;
 }
 
