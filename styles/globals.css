@@ -22,6 +22,7 @@ body {
   margin: 0;
   font-family: 'Radio Canada', sans-serif;
   line-height: 1.4rem;
+  overflow-x: hidden;
 }
 
 h1,

@@ -5,7 +5,6 @@ import styles from './Work.module.css';
 import { ContentListItem } from '../../pages';
 import SectionHeading from '../section-heading/SectionHeading';
 
-import placeholder from '../../public/images/Placeholder.png';
 
 const Work = ({ content }: { content: ContentListItem[] }) => {
   return (

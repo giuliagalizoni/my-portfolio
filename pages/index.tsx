@@ -15,6 +15,8 @@ export interface ContentListItem {
   contentHtml?: string;
 }
 
+// state: x e y
+
 const Home = ({ allContentData }: { allContentData: ContentListItem[] }) => {
   return (
     <Layout>

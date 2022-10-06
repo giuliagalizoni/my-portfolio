@@ -1,20 +1,33 @@
+import { useState, useEffect } from 'react';
+
 import SectionHeading from '../section-heading/SectionHeading';
 import plant from '../../public/images/plant.svg';
 import Wrapper from '../Wrapper';
 
 import styles from './About.module.css';
 
-import { motion, useScroll, useSpring } from 'framer-motion';
-
 const About = () => {
-  const { scrollYProgress } = useScroll();
+  const [scrollY, setscrollY] = useState(0);
+
+  const handleScroll = () => {
+    setscrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  console.log(scrollY);
 
   return (
     <>
-      {/* <motion.div style={{ translateX: scrollYProgress }}>
-        <div className={styles.wave} />
-      </motion.div> */}
-
+      <div
+        style={{ transform: `translateX(-${scrollY}px)` }}
+        className={styles.wavetop}
+      >
+        <img src='/images/Hero-Top.svg' />
+      </div>
       <section className={styles.bg}>
         <Wrapper>
           <div className={styles.sectionContainer}>
@@ -29,6 +42,12 @@ const About = () => {
           </div>
         </Wrapper>
       </section>
+      <div
+        style={{ transform: `translateX(-${scrollY * 2}px)` }}
+        className={styles.wavebottom}
+      >
+        <img src='/images/Hero-Bottom.svg' />
+      </div>
     </>
   );
 };

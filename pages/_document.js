@@ -1,6 +1,13 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import { useRef } from 'react';
+import { useScroll } from 'react-use';
 
 export default function Document() {
+  const scrollRef = useRef(null);
+  const { x, y } = useScroll(scrollRef);
+
+  console.log(x, y);
+
   return (
     <Html lang='en'>
       <Head>
@@ -16,7 +23,7 @@ export default function Document() {
           rel='stylesheet'
         />
       </Head>
-      <body>
+      <body ref={scrollRef}>
         <Main />
         <NextScript />
       </body>
