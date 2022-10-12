@@ -18,8 +18,6 @@ const About = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
-  console.log(scrollY);
-
   return (
     <>
       <div

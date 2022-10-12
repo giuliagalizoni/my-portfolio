@@ -22,6 +22,7 @@
 }
 
 .rotating {
+  margin-top: 32px;
   -webkit-animation: rotating 4s linear infinite;
   animation: rotating 4s linear infinite;
 }

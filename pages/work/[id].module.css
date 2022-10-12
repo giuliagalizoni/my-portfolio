@@ -1,0 +1,20 @@
+.bg {
+  background-image: url(/images/Hero-Bottom.svg);
+  background-repeat: no-repeat;
+}
+
+.border {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: solid 16px var(--acent-default);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+  background-color: var(--acent-default);
+}
+
+.border img {
+  width: 100%;
+  height: auto;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}

@@ -26,7 +26,7 @@ const Home = ({ allContentData }: { allContentData: ContentListItem[] }) => {
       <Wrapper>
         <section className={styles.hero}>
           <h1 className={styles.heroHeading}>
-            Hi! I’m Giulia, a full-stack web developer focusing in
+            Hi! I’m Giulia, a full-stack web developer focusing in{' '}
             <span className={styles.underline}>MERN</span>.
           </h1>
           <p className={styles.heroSubheading}>

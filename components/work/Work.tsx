@@ -5,7 +5,6 @@ import styles from './Work.module.css';
 import { ContentListItem } from '../../pages';
 import SectionHeading from '../section-heading/SectionHeading';
 
-
 const Work = ({ content }: { content: ContentListItem[] }) => {
   return (
     <section>
@@ -17,7 +16,7 @@ const Work = ({ content }: { content: ContentListItem[] }) => {
             <Link href={`/work/${id}`}>
               <div className={styles.card}>
                 <div className={styles.test}>
-                  <img src='/images/Placeholder.png' alt={title} />
+                  <img src={`/images/${id}.svg`} alt={title} />
                 </div>
                 <div className={styles.textBox}>
                   <h3>{title}</h3>

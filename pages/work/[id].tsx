@@ -1,6 +1,4 @@
-import { useRef } from 'react';
-import { useScrolling } from 'react-use';
-
+import styles from './[id].module.css';
 import { getAllContentIds, getContentData } from '../../lib/content';
 import { ContentListItem } from '..';
 import Layout from '../../components/Layout';
@@ -24,33 +22,21 @@ export async function getStaticPaths() {
 }
 
 export default function Project({ postData }: { postData: ContentListItem }) {
-  const { title, contentHtml, tech } = postData;
-
-  const scrollRef = useRef(null);
-  const scrolling = useScrolling(scrollRef);
-
-  console.log(scrolling);
+  const { title, contentHtml, tech, id } = postData;
   return (
-    // background image goes here
-    <div ref={scrollRef}>
+    <div className={styles.bg}>
+      {' '}
+      {/* background img goes here*/}
       <Layout>
         <Wrapper>
-          {/* <div
-            style={{
-              width: '150px',
-              height: '150px',
-            }}
-          >
-            <div
-              style={{
-                width: '150px',
-                height: '1000px',
-                overflow: 'auto',
-                backgroundColor: 'red',
-              }}
-            ></div>
-          </div> */}
           <h1>{title}</h1>
+          <div>
+            <button>View demo</button>
+            <button>Repository</button>
+          </div>
+          <div className={styles.border}>
+            <img src={`/images/${id}.svg`} alt={title} />
+          </div>
           <ul>
             {tech.map((el) => (
               <li key={el}>{el}</li>

@@ -26,6 +26,7 @@
 
   /* border: solid 25px var(--acent-default); */
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  transition: border-radius 200ms;
 }
 
 .textBox {
@@ -71,4 +72,12 @@
   letter-spacing: -0.01em;
 
   color: var(--text-subdued);
+}
+
+.card:hover h3 {
+  text-decoration: underline;
+}
+
+.card:hover img {
+  border-radius: 265px 35px 215px 25px/25px 215px 55px 215px;
 }

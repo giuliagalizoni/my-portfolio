@@ -13,17 +13,19 @@ const Footer = () => {
             <img src={smileIcon.src} alt='Smile Icon' />
             <p>That’s all for now</p>
           </div>
-          <div>
-            <nav className={styles.nav}>
-              <Menu btnPrimary={true} />
-            </nav>
-
-            <p className={styles.subtitle}>
-              Developed in Berlin with Next.js © 2022 Giulia Galizoni
-            </p>
-          </div>
         </div>
       </Wrapper>
+      <div className={styles.footerBottom}>
+        <Wrapper>
+          <nav className={styles.nav}>
+            <Menu btnPrimary={true} />
+          </nav>
+
+          <p className={styles.subtitle}>
+            Developed in Berlin with Next.js © 2022 Giulia Galizoni
+          </p>
+        </Wrapper>
+      </div>
     </footer>
   );
 };
