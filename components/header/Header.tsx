@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Link from 'next/link';
 
 import Wrapper from '../Wrapper';
@@ -10,6 +12,11 @@ import photo from '../../public/images/Photo.png';
 import Hamburger from '../hamburger/Hamburger';
 
 const Header = () => {
+  const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
+
+  const toggleHamburger = () => setHamburgerIsOpen(!hamburgerIsOpen);
+
+  console.log(hamburgerIsOpen);
   return (
     <header className={styles.header}>
       <Wrapper>
@@ -21,10 +28,14 @@ const Header = () => {
             </div>
           </Link>
           {/* usar a flag do menu hambuger pra definir se column é true ou false */}
-          <Menu column={false} />
-
+          <div className={styles.hide}>
+            <Menu column={false} />
+          </div>
           <div className={styles.hamburger}>
-            <button>Hamburger</button>
+            <button onClick={toggleHamburger}>Hamburger</button>
+            <div className={hamburgerIsOpen ? styles.show : styles.hide}>
+              <Menu column={true} />
+            </div>
           </div>
         </nav>
       </Wrapper>
