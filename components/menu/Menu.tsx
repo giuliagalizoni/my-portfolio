@@ -1,10 +1,18 @@
 import styles from './Menu.module.css';
 import Button from '../button/Button';
 
-const Menu = ({ btnPrimary }: { btnPrimary?: boolean }) => {
+const Menu = ({
+  btnPrimary,
+  column,
+}: {
+  btnPrimary?: boolean;
+  column?: boolean;
+}) => {
   return (
-    <ul className={styles.navList}>
-      <div>
+    <ul
+      className={column ? `${styles.navList} ${styles.column}` : styles.navList}
+    >
+      <div className={column ? styles.column : ''}>
         <li>
           <a href='https://github.com/giuliagalizoni' target='_blank'>
             Github

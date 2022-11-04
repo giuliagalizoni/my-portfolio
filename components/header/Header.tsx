@@ -7,6 +7,7 @@ import Menu from '../menu/Menu';
 import styles from './Header.module.css';
 
 import photo from '../../public/images/Photo.png';
+import Hamburger from '../hamburger/Hamburger';
 
 const Header = () => {
   return (
@@ -19,7 +20,12 @@ const Header = () => {
               <a className={styles.title}>Giulia Galizoni</a>
             </div>
           </Link>
-          <Menu />
+          {/* usar a flag do menu hambuger pra definir se column é true ou false */}
+          <Menu column={false} />
+
+          <div className={styles.hamburger}>
+            <button>Hamburger</button>
+          </div>
         </nav>
       </Wrapper>
     </header>

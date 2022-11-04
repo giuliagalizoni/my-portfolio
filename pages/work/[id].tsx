@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import styles from './[id].module.css';
 import { getAllContentIds, getContentData } from '../../lib/content';
 import { ContentListItem } from '..';
@@ -22,27 +24,50 @@ export async function getStaticPaths() {
 }
 
 export default function Project({ postData }: { postData: ContentListItem }) {
-  const { title, contentHtml, tech, id } = postData;
+  const [scrollY, setscrollY] = useState(0);
+
+  const handleScroll = () => {
+    setscrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  const { title, contentHtml, tech, id, date, summary } = postData;
   return (
     <div className={styles.bg}>
-      {' '}
-      {/* background img goes here*/}
       <Layout>
         <Wrapper>
-          <h1>{title}</h1>
-          <div>
-            <button>View demo</button>
-            <button>Repository</button>
+          <div className={styles.heading}>
+            <img
+              src='/icons/star.svg'
+              style={{ transform: `rotate(${scrollY}deg)` }}
+            />
+            <h1>{title}</h1>
+            <p>{summary}</p>
+            <div>
+              <button>View demo</button>
+              <button>Repository</button>
+            </div>
           </div>
+
           <div className={styles.border}>
             <img src={`/images/${id}.svg`} alt={title} />
           </div>
-          <ul>
-            {tech.map((el) => (
-              <li key={el}>{el}</li>
-            ))}
-          </ul>
-          <div dangerouslySetInnerHTML={{ __html: contentHtml! }} />
+          <div className={styles.info}>
+            <ul>
+              {tech.map((el) => (
+                <li key={el}>{el}</li>
+              ))}
+            </ul>
+            <p>{date}</p>
+          </div>
+          <div
+            className={styles.text}
+            dangerouslySetInnerHTML={{ __html: contentHtml! }}
+          />
         </Wrapper>
       </Layout>
     </div>

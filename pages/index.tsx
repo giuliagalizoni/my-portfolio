@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { getContentListData } from '../lib/content';
@@ -13,9 +15,8 @@ export interface ContentListItem {
   tech: string[];
   title: string;
   contentHtml?: string;
+  date?: string;
 }
-
-// state: x e y
 
 const Home = ({ allContentData }: { allContentData: ContentListItem[] }) => {
   return (

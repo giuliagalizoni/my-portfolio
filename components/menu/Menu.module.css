@@ -7,6 +7,10 @@
   align-items: center;
   justify-content: space-between;
 }
+.column {
+  display: flex;
+  flex-direction: column;
+}
 
 .navList li {
   display: inline;
