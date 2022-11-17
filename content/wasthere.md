@@ -1,6 +1,6 @@
 ---
 title: 'Wasthere'
-summary: 'Nulla porttitor velit vitae nibh venenatis vehicula'
+summary: 'Social blog for sharing travel experiences'
 tech: ['Javascript', 'React.js', 'Bootstrap', 'Axios']
 date: 'April, 2022'
 ---

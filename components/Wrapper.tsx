@@ -6,7 +6,7 @@ const Wrapper = ({ children }: { children: ReactNode }) => {
       style={{
         maxWidth: '928px',
         margin: '0 auto',
-        padding: '0 16px',
+        padding: '0 24px',
       }}
     >
       {children}

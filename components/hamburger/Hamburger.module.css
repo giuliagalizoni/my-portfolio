@@ -1,16 +1,61 @@
-.hamburger {
-  width: 2rem;
-  height: 2rem;
+.container {
   display: flex;
-  justify-content: space-around;
-  flex-flow: column nowrap;
-  z-index: 10;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #f7f7f8;
+
+  height: 100%;
 }
-.burger {
-  width: 2rem;
-  height: 0.25rem;
-  border-radius: 10px;
-  background-color: black;
-  transform-origin: 1px;
-  transition: all 0.3s linear;
+
+.hamburgerTop {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 24px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn {
+  align-self: flex-end;
+  margin-bottom: 16px;
+}
+
+.navList li {
+  display: inline;
+}
+
+.navList li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 8px 8px 16px;
+
+  text-decoration: none;
+
+  height: 38px;
+
+  border-bottom: 1px solid rgba(83, 83, 83, 0.15);
+}
+
+.linkText {
+  font-family: 'Radio Canada';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 22px;
+  color: var(--text-default);
+}
+
+.contactBtn {
+  padding: 24px;
+  width: 272px;
+  align-self: center;
 }

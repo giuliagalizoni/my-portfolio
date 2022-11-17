@@ -16,7 +16,6 @@ const Header = () => {
 
   const toggleHamburger = () => setHamburgerIsOpen(!hamburgerIsOpen);
 
-  console.log(hamburgerIsOpen);
   return (
     <header className={styles.header}>
       <Wrapper>
@@ -32,9 +31,12 @@ const Header = () => {
             <Menu column={false} />
           </div>
           <div className={styles.hamburger}>
-            <button onClick={toggleHamburger}>Hamburger</button>
+            <Button btnPrimary={true} onClick={toggleHamburger}>
+              <img src='/icons/icon-menu.svg' />
+            </Button>
             <div className={hamburgerIsOpen ? styles.show : styles.hide}>
-              <Menu column={true} />
+              {/* <Menu column={true} /> */}
+              <Hamburger setHamburgerIsOpen={setHamburgerIsOpen} />
             </div>
           </div>
         </nav>

@@ -1,6 +1,6 @@
 ---
 title: 'Organize.me'
-summary: 'Nulla porttitor velit vitae nibh venenatis vehicula'
+summary: 'Planner app focused on helping people with ADHD'
 tech: ['Javascript', 'React.js', 'Nodejs', 'Express.js', 'MongoDB']
 date: 'July, 2022'
 ---

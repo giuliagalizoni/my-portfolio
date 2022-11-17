@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.nav img {
+.logo img {
   border-radius: 50%;
   width: 40px;
 }
@@ -51,12 +51,24 @@
 
   .hide {
     display: none;
+    transform: none;
   }
 
   .show {
     display: inline;
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    margin-top: 32px;
+    top: 0; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    /* transform-origin: 0% 0%;
+    transform: translate(-60%, 0);
+
+    transition: left 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); */
   }
 }

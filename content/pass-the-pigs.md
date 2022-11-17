@@ -1,6 +1,6 @@
 ---
 title: 'Pass the pigs'
-summary: 'Nulla porttitor velit vitae nibh venenatis vehicula'
+summary: 'Digital adaptation of a fun board game'
 tech: ['Javascript', 'HTML5', 'CSS3', 'OOP']
 date: 'February, 2022'
 ---

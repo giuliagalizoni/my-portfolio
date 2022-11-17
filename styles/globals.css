@@ -1,11 +1,20 @@
 :root {
   --acent-default: #fef6f6;
+  --accent-hover: #f9b9b9;
+  --accent-border: #fcdcdc;
+
+  --text-default: #000;
+  --text-subdued: #7a818f;
+
+  --interaction-default: #c54541;
+
   --neutral-default: #fff;
   --neutral-subdued: #f6f7f9;
   --neutral-border: #e7ecf4;
-  --text-default: #000;
-  --text-subdued: #7a818f;
-  --interaction-default: #c54541;
+
+  --neutral-inverse-default: #000;
+  --neutral-inverse-hover: #2a2d33;
+
   --primary-default: #000;
   --primary-hover: #2a2d33;
 }
@@ -33,13 +42,26 @@ h5,
 h6 {
   font-family: 'Domine', serif;
 }
-/* 
+
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  :root {
+    --acent-default: #282332;
+    --accent-hover: #3e3256;
+    --accent-border: #593883;
+
+    --text-default: #fff;
+    --text-subdued: #e7ecf4;
+
+    --interaction-default: #8c70db;
+
+    --neutral-default: #18191b;
+    --neutral-subdued: #2a2d33;
+    --neutral-border: #545a65;
+
+    --neutral-inverse-default: #fff;
+    --neutral-inverse-hover: #f6f7f9;
+
+    --primary-default: #fff;
+    --primary-hover: #f6f7f9;
   }
-  body {
-    color: white;
-    background: black;
-  }
-} */
+}
