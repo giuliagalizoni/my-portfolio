@@ -34,7 +34,9 @@ const Header = () => {
             <Button btnPrimary={true} onClick={toggleHamburger}>
               <img src='/icons/icon-menu.svg' />
             </Button>
-            <div className={hamburgerIsOpen ? styles.show : styles.hide}>
+            <div
+              className={hamburgerIsOpen ? `${styles.show} ` : styles.translate}
+            >
               {/* <Menu column={true} /> */}
               <Hamburger setHamburgerIsOpen={setHamburgerIsOpen} />
             </div>
