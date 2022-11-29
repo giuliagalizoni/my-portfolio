@@ -99,3 +99,7 @@
 
   margin-bottom: 64px;
 }
+
+.text p > img {
+  max-width: 200px;
+}
