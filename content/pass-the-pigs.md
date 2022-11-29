@@ -20,18 +20,18 @@ On each turn, a player rolls the pigs and waits for the result based on which po
 - **Leaning Jowler:** +15 points
 - **Snouter:** +10 points
 - **Sider:** +1 point
-- **Makin' bacon:** player loses all the round points, all the accumulated points, and their turn
+- **Makin' bacon:** the player loses all the round points, all the accumulated points, and their turn
 - **Razorback:** +5 points
 - **Piggyback:** +1 point
-- **Pig out:** player loses their turn and all the round points
+- **Pig out:** the player loses their turn and all the round points
 
 ## Development
 
 I developed this project at the end of the first module of the web development Bootcamp in Ironhack. The guidelines were quite simple: it should be a game rendered in the browser, with logic for winning and losing, built with HTML, CSS, and Javascript using Object Oriented Programming.
 
-The game is built in two scripts. The first one, game.js, contains the logical structure needed for the game to work. There are two classes: the Player class, which has properties and methods responsible for controlling the players' actions, and the Game class, which contains properties and methods responsible for controlling the actions related to the game itself, that is, counting the points, marking who is the active player, checking the winner and starting a new game.
+The game is built in two scripts. The first one, `game.js`, contains the logical structure needed for the game to work. There are two classes: the `Player` class, which has properties and methods responsible for controlling the players' actions, and the `Game` class, which contains properties and methods responsible for controlling the actions related to the game itself, that is, counting the points, marking who is the active player, checking the winner and starting a new game.
 
-The second script, index.js, is where new instances of the classes Game and Player are created and where the DOM manipulations occur to guarantee that the pretty buttons built with HTML and CSS actually work.
+The second script, `index.js`, is where new instances of the classes `Game` and `Player` are created and where the DOM manipulations occur to guarantee that the pretty buttons built with HTML and CSS actually work.
 
 ## Final thoughts
 

@@ -5,6 +5,7 @@ import { getAllContentIds, getContentData } from '../../lib/content';
 import { ContentListItem } from '..';
 import Layout from '../../components/Layout';
 import Wrapper from '../../components/Wrapper';
+import Button from '../../components/button/Button';
 
 export async function getStaticProps({ params }: { params: { id: string } }) {
   const postData = await getContentData(params.id);
@@ -48,8 +49,8 @@ export default function Project({ postData }: { postData: ContentListItem }) {
             <h1>{title}</h1>
             <p>{summary}</p>
             <div>
-              <button>View demo</button>
-              <button>Repository</button>
+              <Button onClick={() => 'go somewhere'}>View demo</Button>
+              <Button onClick={() => 'go somewhere'}>Repository</Button>
             </div>
           </div>
 

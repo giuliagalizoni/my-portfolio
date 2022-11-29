@@ -33,7 +33,9 @@ const Menu = ({
         </li>
       </div>
       <li>
-        <Button btnPrimary={btnPrimary}>Contact</Button>
+        <Button btnPrimary={btnPrimary} onClick={() => 'go somewhere'}>
+          Contact
+        </Button>
       </li>
     </ul>
   );
