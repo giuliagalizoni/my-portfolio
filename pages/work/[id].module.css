@@ -35,7 +35,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  /* border: solid 16px var(--acent-default); */
+  /* border: solid 16px var(--accent-default); */
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 
   background-color: var(--neutral-default);

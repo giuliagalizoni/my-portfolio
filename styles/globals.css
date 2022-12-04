@@ -1,5 +1,5 @@
 :root {
-  --acent-default: #fef6f6;
+  --accent-default: #fef6f6;
   --accent-hover: #f9b9b9;
   --accent-border: #fcdcdc;
 
@@ -32,6 +32,8 @@ body {
   font-family: 'Radio Canada', sans-serif;
   line-height: 1.4rem;
   overflow-x: hidden;
+
+  background-color: var(--neutral-default);
 }
 
 h1,
@@ -41,11 +43,12 @@ h4,
 h5,
 h6 {
   font-family: 'Domine', serif;
+  color: var(--text-default);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --acent-default: #282332;
+    --accent-default: #282332;
     --accent-hover: #3e3256;
     --accent-border: #593883;
 
