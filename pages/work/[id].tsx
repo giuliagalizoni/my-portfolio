@@ -48,7 +48,7 @@ export default function Project({ postData }: { postData: ContentListItem }) {
             />
             <h1>{title}</h1>
             <p>{summary}</p>
-            <div>
+            <div className={styles.btns}>
               <Button onClick={() => 'go somewhere'}>View demo</Button>
               <Button onClick={() => 'go somewhere'}>Repository</Button>
             </div>

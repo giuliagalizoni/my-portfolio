@@ -50,6 +50,11 @@
     /* width: 100px; */
   }
 
+  .hamburger svg {
+    fill: currentColor;
+    color: var(--neutral-default);
+  }
+
   .hide {
     display: none;
   }
