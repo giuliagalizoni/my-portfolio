@@ -3,6 +3,8 @@ title: 'Organize.me'
 summary: 'Planner app focused on helping people with ADHD'
 tech: ['Javascript', 'React.js', 'Nodejs', 'Express.js', 'MongoDB']
 date: 'July, 2022'
+demo: 'https://organize-me-app.netlify.app/'
+repo: 'https://github.com/giuliagalizoni/organizeme-frontend'
 ---
 
 Organize.me is a special project to me because there was a lot of collaboration during its whole development until it was finally up and running. Initially, the app was designed by my colleague Bianca Nascimento, for her final project in the UX/UI Bootcamp at Ironhack. As we had to deliver a full-stack application for our final project, my teammate Junior Vilarino and I decided to work with a designer to make our experience more alike what our work would be in real life, and Organize.me was the chosen one, not only because we thought it looked cool, but also because of its purpose: to help people with ADHD organize their tasks and be more productive without overwhelming themselves.

@@ -36,7 +36,7 @@ export default function Project({ postData }: { postData: ContentListItem }) {
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
-  const { title, contentHtml, tech, id, date, summary } = postData;
+  const { title, contentHtml, tech, id, date, summary, demo, repo } = postData;
   return (
     <div className={styles.bg}>
       <Layout>
@@ -49,8 +49,20 @@ export default function Project({ postData }: { postData: ContentListItem }) {
             <h1>{title}</h1>
             <p>{summary}</p>
             <div className={styles.btns}>
-              <Button onClick={() => 'go somewhere'}>View demo</Button>
-              <Button onClick={() => 'go somewhere'}>Repository</Button>
+              <Button
+                onClick={() => {
+                  window.open(demo, '_blank');
+                }}
+              >
+                View demo
+              </Button>
+              <Button
+                onClick={() => {
+                  window.open(repo, '_blank');
+                }}
+              >
+                Repository
+              </Button>
             </div>
           </div>
 

@@ -3,6 +3,8 @@ title: 'Wasthere'
 summary: 'Social blog for sharing travel experiences'
 tech: ['Javascript', 'React.js', 'Bootstrap', 'Axios']
 date: 'April, 2022'
+demo: 'https://wasthere.netlify.app/'
+repo: 'https://github.com/giuliagalizoni/wasthere'
 ---
 
 This application was built by me and my colleague Junior Vilarino. When we were discussing what theme we should choose for the second project of our Bootcamp, we decided that it would be more fun to work with something we both love: travelling ‒‒ and that is how Wasthere was born.

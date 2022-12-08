@@ -16,6 +16,8 @@ export interface ContentListItem {
   title: string;
   contentHtml?: string;
   date?: string;
+  demo: string;
+  repo: string;
 }
 
 const Home = ({ allContentData }: { allContentData: ContentListItem[] }) => {

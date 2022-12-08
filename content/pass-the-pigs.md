@@ -3,6 +3,8 @@ title: 'Pass the pigs'
 summary: 'Digital adaptation of a fun board game'
 tech: ['Javascript', 'HTML5', 'CSS3', 'OOP']
 date: 'February, 2022'
+demo: 'https://giuliagalizoni.github.io/passthepigs/'
+repo: 'https://github.com/giuliagalizoni/passthepigs'
 ---
 
 Welcome to my very first web development project!

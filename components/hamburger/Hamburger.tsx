@@ -41,7 +41,12 @@ const Hamburger = ({
       </div>
 
       <span className={styles.contactBtn}>
-        <Button btnPrimary={false} onClick={() => true}>
+        <Button
+          btnPrimary={false}
+          onClick={() => {
+            window.location.href = 'mailto:giuliagalizoni@gmail.com';
+          }}
+        >
           Contact
         </Button>
       </span>
