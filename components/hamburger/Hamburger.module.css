@@ -54,13 +54,12 @@
   color: var(--text-default);
 }
 
-.container button {
-  width: 100%;
-  margin: 24px;
-}
-
 .contactBtn {
   padding: 24px;
   width: 272px;
   align-self: center;
+}
+
+.contactBtn button {
+  width: 100%;
 }
