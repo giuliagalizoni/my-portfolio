@@ -5,6 +5,10 @@
   width: 100%;
 } */
 
+.menuContainer {
+  display: flex;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -55,7 +59,7 @@
     color: var(--neutral-default);
   }
 
-  .hide {
+  .menuContainer {
     display: none;
   }
 

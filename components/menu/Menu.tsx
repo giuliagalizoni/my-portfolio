@@ -32,16 +32,6 @@ const Menu = ({
           </a>
         </li>
       </div>
-      <li>
-        <Button
-          btnPrimary={btnPrimary}
-          onClick={() => {
-            window.location.href = 'mailto:giuliagalizoni@gmail.com';
-          }}
-        >
-          Contact
-        </Button>
-      </li>
     </ul>
   );
 };

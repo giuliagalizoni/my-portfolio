@@ -50,6 +50,7 @@ export default function Project({ postData }: { postData: ContentListItem }) {
             <p>{summary}</p>
             <div className={styles.btns}>
               <Button
+                btnPrimary
                 onClick={() => {
                   window.open(demo, '_blank');
                 }}

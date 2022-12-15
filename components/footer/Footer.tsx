@@ -3,10 +3,11 @@ import styles from './Footer.module.css';
 
 import Menu from '../menu/Menu';
 import Wrapper from '../Wrapper';
+import Button from '../button/Button';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer>
       <Wrapper>
         <div className={styles.footerContainer}>
           <div className={styles.end}>
@@ -25,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
       </Wrapper>
-      <div className={styles.footerTop}>
+      {/* <div className={styles.footerTop}>
         <svg
           width='5000'
           height='36'
@@ -47,16 +48,29 @@ const Footer = () => {
             </clipPath>
           </defs>
         </svg>
-      </div>
+      </div> */}
       <div className={styles.footerBottom}>
         <Wrapper>
-          <nav className={styles.nav}>
-            <Menu btnPrimary={true} />
-          </nav>
+          <div className={styles.footerContent}>
+            <div className={styles.footerStartContent}>
+              <nav className={styles.nav}>
+                <Menu btnPrimary={true} />
+              </nav>
 
-          <p className={styles.subtitle}>
-            Developed in Berlin with Next.js © 2022 Giulia Galizoni
-          </p>
+              <p className={styles.subtitle}>
+                Developed in Berlin with Next.js © 2022 Giulia Galizoni
+              </p>
+            </div>
+
+            <Button
+              btnPrimary={true}
+              onClick={() => {
+                window.location.href = 'mailto:giuliagalizoni@gmail.com';
+              }}
+            >
+              Contact
+            </Button>
+          </div>
         </Wrapper>
       </div>
     </footer>

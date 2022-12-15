@@ -3,15 +3,12 @@
 }
 
 .wavetop {
-  width: 100%;
+  width: 8000px;
   height: 190px;
   background-color: var(--neutral-default);
+  background-image: url(/images/Hero-Top.svg);
+  background-repeat: repeat-x;
 }
-
-/* .wavetop img {
-  fill: currentColor;
-  color: var(--accent-default);
-} */
 
 .svgWave {
   fill: currentColor;
@@ -19,49 +16,12 @@
 }
 
 .wavebottom {
+  width: 8000px;
   height: 200px;
   background-color: var(--neutral-default);
+  background-image: url(/images/Hero-Bottom.svg);
+  background-repeat: repeat-x;
 }
-
-/* .before {
-  content: '';
-  display: block;
-  height: 190px;
-  background-color: var(--neutral-default);
-  background-image: url('../../public/images/Hero-Top.svg');
-  background-repeat: repeat-x;
-  background-position: start top;
-
-  animation: bg-animation 60s linear infinite;
-} */
-
-/* .wave {
-  width: 5000px;
-  overflow: hidden;
-  transform-origin: 0%;
-  display: block;
-  height: 190px;
-  background-color: var(--neutral-default);
-  background-image: url('../../public/images/Hero-Top.svg');
-  background-repeat: repeat-x;
-  background-position: 0%;
-} */
-
-/* @keyframes bg-animation {
-  to {
-    background-position-x: 100%;
-  }
-} */
-
-/* .bg::after {
-  content: '';
-  display: block;
-  height: 200px;
-  background-color: var(--neutral-default);
-  background-image: url('../../public/images/Hero-Bottom.svg');
-  background-repeat: repeat-x;
-  background-position: start top;
-} */
 
 .sectionContainer {
   display: flex;
@@ -81,8 +41,22 @@
   letter-spacing: -0.01em;
 }
 
-.img {
+.aboutImg {
   width: 100%;
   max-width: 640px;
   height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wavetop {
+    background-image: url(/images/Hero-Top-dark.svg);
+  }
+
+  .wavebottom {
+    background-image: url(/images/Hero-Bottom-dark.svg);
+  }
+
+  .aboutImg {
+    filter: invert();
+  }
 }

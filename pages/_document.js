@@ -24,6 +24,7 @@ export default function Document() {
         />
       </Head>
       <body ref={scrollRef}>
+        <script src='noflash.js' />
         <Main />
         <NextScript />
       </body>

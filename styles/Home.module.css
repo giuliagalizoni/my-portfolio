@@ -45,16 +45,8 @@
   background-position: center bottom;
 }
 
-/* .underline::after {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 1;
-  top: 3;
-  height: 5px;
-  border: 1px solid #fcdcdc;
-  border-bottom: 0;
-  border-radius: 3em 3em 0 0;
-  content: '';
-  background: #fcdcdc;
-} */
+@media (prefers-color-scheme: dark) {
+  .underline {
+    background-image: url(../public/images/underline-dark.svg);
+  }
+}

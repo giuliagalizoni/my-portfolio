@@ -34,11 +34,7 @@
 .btns {
   display: flex;
   justify-content: space-between;
-  width: 300px;
-}
-
-.btns button {
-  margin: 2px;
+  gap: 16px;
 }
 
 .border {
@@ -112,4 +108,10 @@
 
 .text p > img {
   max-width: 200px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg {
+    background-image: url(/images/header-post-dark.svg);
+  }
 }

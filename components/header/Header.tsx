@@ -26,9 +26,16 @@ const Header = () => {
               <a className={styles.title}>Giulia Galizoni</a>
             </div>
           </Link>
-          {/* usar a flag do menu hambuger pra definir se column é true ou false */}
-          <div className={styles.hide}>
+
+          <div className={styles.menuContainer}>
             <Menu column={false} />
+            <Button
+              onClick={() => {
+                window.location.href = 'mailto:giuliagalizoni@gmail.com';
+              }}
+            >
+              Contact
+            </Button>
           </div>
           <div className={styles.hamburger}>
             <Button btnPrimary={true} onClick={toggleHamburger}>
