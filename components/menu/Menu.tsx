@@ -27,7 +27,10 @@ const Menu = ({
           </a>
         </li>
         <li>
-          <a target='_blank' href='/'>
+          <a
+            target='_blank'
+            href='https://drive.google.com/file/d/13H3Dwzr5bQzZxvbmOHPdai53axt29-3N/view?usp=sharing'
+          >
             Resume
           </a>
         </li>
