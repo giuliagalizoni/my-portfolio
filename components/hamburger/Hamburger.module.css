@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #f7f7f8;
+  background: var(--neutral-subdued);
 
   height: 100%;
+}
+
+.btn svg {
+  fill: currentColor;
+  color: var(--neutral-default);
 }
 
 .hamburgerTop {
@@ -62,4 +67,11 @@
 
 .contactBtn button {
   width: 100%;
+  color: var(--text-default);
+}
+
+@media (prefers-color-scheme: dark) {
+  .container img {
+    filter: invert();
+  }
 }

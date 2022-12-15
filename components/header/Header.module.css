@@ -54,10 +54,10 @@
     /* width: 100px; */
   }
 
-  .hamburger svg {
+  /* .hamburger svg {
     fill: currentColor;
     color: var(--neutral-default);
-  }
+  } */
 
   .menuContainer {
     display: none;
@@ -84,5 +84,10 @@
     opacity: 0;
     transform: translate(100%, 0);
     transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  @media (prefers-color-scheme: dark) {
+    .hamburger img {
+      filter: invert();
+    }
   }
 }
