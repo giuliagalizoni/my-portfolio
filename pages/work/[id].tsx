@@ -50,6 +50,7 @@ export default function Project({ postData }: { postData: ContentListItem }) {
                 height={48}
                 src='/icons/star.svg'
                 style={{ transform: `rotate(${scrollY}deg)` }}
+                alt=''
               />
             </span>
             <h1>{title}</h1>
