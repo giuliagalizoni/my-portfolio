@@ -34,6 +34,7 @@
 
 .footerTop {
   height: 35px;
+  margin-top: 80px;
 }
 .footerTop svg {
   fill: currentColor;
@@ -42,17 +43,16 @@
 
 .footerBottom {
   background-color: var(--neutral-subdued);
-  margin-top: 80px;
 }
 
-.footerBottom::before {
+/* .footerBottom::before {
   content: '';
   display: block;
   height: 35px;
   background-color: var(--neutral-default);
   background-image: url(/images/footer-top.svg);
   background-repeat: no-repeat;
-}
+} */
 
 .footerContent {
   display: flex;

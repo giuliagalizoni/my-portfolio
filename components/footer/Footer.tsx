@@ -11,8 +11,6 @@ const Footer = () => {
       <Wrapper>
         <div className={styles.footerContainer}>
           <div className={styles.end}>
-            {/* <img src={smileIcon.src} alt='Smile Icon' /> */}
-
             <svg
               width='32'
               height='32'
@@ -26,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
       </Wrapper>
-      {/* <div className={styles.footerTop}>
+      <div className={styles.footerTop}>
         <svg
           width='5000'
           height='36'
@@ -48,7 +46,7 @@ const Footer = () => {
             </clipPath>
           </defs>
         </svg>
-      </div> */}
+      </div>
       <div className={styles.footerBottom}>
         <Wrapper>
           <div className={styles.footerContent}>

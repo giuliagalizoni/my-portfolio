@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 import SectionHeading from '../section-heading/SectionHeading';
 import Wrapper from '../Wrapper';
 
@@ -33,9 +33,11 @@ const About = () => {
               and build things that have a positive impact in people's lives
               with innovative businesses.
             </p>
-            <img
+            <Image
               src='/images/plant.png'
-              alt='plant'
+              alt='Hand draing of a branch of a plant'
+              width={640}
+              height={730}
               className={styles.aboutImg}
             />
           </div>

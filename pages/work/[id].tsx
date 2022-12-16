@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+import Image from 'next/image';
+
 import styles from './[id].module.css';
 import { getAllContentIds, getContentData } from '../../lib/content';
 import { ContentListItem } from '..';
@@ -42,10 +44,14 @@ export default function Project({ postData }: { postData: ContentListItem }) {
       <Layout>
         <Wrapper>
           <div className={styles.heading}>
-            <img
-              src='/icons/star.svg'
-              style={{ transform: `rotate(${scrollY}deg)` }}
-            />
+            <span>
+              <Image
+                width={48}
+                height={48}
+                src='/icons/star.svg'
+                style={{ transform: `rotate(${scrollY}deg)` }}
+              />
+            </span>
             <h1>{title}</h1>
             <p>{summary}</p>
             <div className={styles.btns}>
@@ -68,7 +74,12 @@ export default function Project({ postData }: { postData: ContentListItem }) {
           </div>
 
           <div className={styles.border}>
-            <img src={`/images/${id}.svg`} alt={title} />
+            <Image
+              src={`/images/${id}.svg`}
+              alt={title}
+              width={960}
+              height={420}
+            />
           </div>
           <div className={styles.info}>
             <ul>

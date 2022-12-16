@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import Image from 'next/image';
 import Link from 'next/link';
 
 import Wrapper from '../Wrapper';
@@ -22,7 +23,12 @@ const Header = () => {
         <nav className={styles.nav}>
           <Link href='/'>
             <div className={styles.logo}>
-              <img src={photo.src} alt="Giulia's picture" />
+              <Image
+                src={photo.src}
+                alt="Giulia's picture"
+                width='40px'
+                height='40px'
+              />
               <a className={styles.title}>Giulia Galizoni</a>
             </div>
           </Link>
@@ -39,12 +45,11 @@ const Header = () => {
           </div>
           <div className={styles.hamburger}>
             <Button btnPrimary={true} onClick={toggleHamburger}>
-              <img src='/icons/icon-menu.svg' />
+              <Image src='/icons/icon-menu.svg' width={24} height={24} />
             </Button>
             <div
               className={hamburgerIsOpen ? `${styles.show} ` : styles.translate}
             >
-              {/* <Menu column={true} /> */}
               <Hamburger setHamburgerIsOpen={setHamburgerIsOpen} />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import styles from './Hamburger.module.css';
 import Button from '../button/Button';
+import Image from 'next/image';
 
 const Hamburger = ({
   setHamburgerIsOpen,
@@ -11,30 +12,39 @@ const Hamburger = ({
       <div className={styles.hamburgerTop}>
         <span className={styles.btn}>
           <Button btnPrimary={true} onClick={() => setHamburgerIsOpen(false)}>
-            <img src='/icons/x.svg' />
+            <Image src='/icons/x.svg' width={24} height={24} />
           </Button>
         </span>
 
         <ul className={styles.navList}>
           <li>
-            <a href='https://github.com/giuliagalizoni' target='_blank'>
+            <a
+              href='https://github.com/giuliagalizoni'
+              target='_blank'
+              rel='noreferrer'
+            >
               <span className={styles.linkText}>Github</span>
-              <img src='/icons/external-link.svg' />
+              <Image src='/icons/external-link.svg' width={20} height={20} />
             </a>
           </li>
           <li>
             <a
               href='https://www.linkedin.com/in/giulia-galizoni-caversan/'
               target='_blank'
+              rel='noreferrer'
             >
               <span className={styles.linkText}>LinkedIn</span>
-              <img src='/icons/external-link.svg' />
+              <Image src='/icons/external-link.svg' width={20} height={20} />
             </a>
           </li>
           <li>
-            <a target='_blank' href='/'>
+            <a
+              target='_blank'
+              href='https://drive.google.com/file/d/13H3Dwzr5bQzZxvbmOHPdai53axt29-3N/view?usp=sharing'
+              rel='noreferrer'
+            >
               <span className={styles.linkText}>Resume</span>
-              <img src='/icons/external-link.svg' />
+              <Image src='/icons/external-link.svg' width={20} height={20} />
             </a>
           </li>
         </ul>

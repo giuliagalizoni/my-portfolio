@@ -14,7 +14,11 @@ const Menu = ({
     >
       <div className={column ? styles.column : ''}>
         <li>
-          <a href='https://github.com/giuliagalizoni' target='_blank'>
+          <a
+            href='https://github.com/giuliagalizoni'
+            target='_blank'
+            rel='noreferrer'
+          >
             Github
           </a>
         </li>
@@ -22,6 +26,7 @@ const Menu = ({
           <a
             href='https://www.linkedin.com/in/giulia-galizoni-caversan/'
             target='_blank'
+            rel='noreferrer'
           >
             LinkedIn
           </a>
@@ -29,6 +34,7 @@ const Menu = ({
         <li>
           <a
             target='_blank'
+            rel='noreferrer'
             href='https://drive.google.com/file/d/13H3Dwzr5bQzZxvbmOHPdai53axt29-3N/view?usp=sharing'
           >
             Resume
