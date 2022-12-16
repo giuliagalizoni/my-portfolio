@@ -12,7 +12,7 @@ const Hamburger = ({
       <div className={styles.hamburgerTop}>
         <span className={styles.btn}>
           <Button btnPrimary={true} onClick={() => setHamburgerIsOpen(false)}>
-            <Image src='/icons/x.svg' width={24} height={24} />
+            <Image src='/icons/x.svg' width={24} height={24} alt='' />
           </Button>
         </span>
 
@@ -24,7 +24,12 @@ const Hamburger = ({
               rel='noreferrer'
             >
               <span className={styles.linkText}>Github</span>
-              <Image src='/icons/external-link.svg' width={20} height={20} />
+              <Image
+                src='/icons/external-link.svg'
+                width={20}
+                height={20}
+                alt=''
+              />
             </a>
           </li>
           <li>
@@ -34,7 +39,12 @@ const Hamburger = ({
               rel='noreferrer'
             >
               <span className={styles.linkText}>LinkedIn</span>
-              <Image src='/icons/external-link.svg' width={20} height={20} />
+              <Image
+                src='/icons/external-link.svg'
+                width={20}
+                height={20}
+                alt=''
+              />
             </a>
           </li>
           <li>
@@ -44,7 +54,12 @@ const Hamburger = ({
               rel='noreferrer'
             >
               <span className={styles.linkText}>Resume</span>
-              <Image src='/icons/external-link.svg' width={20} height={20} />
+              <Image
+                src='/icons/external-link.svg'
+                width={20}
+                height={20}
+                alt=''
+              />
             </a>
           </li>
         </ul>

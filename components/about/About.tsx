@@ -28,10 +28,10 @@ const About = () => {
           <div className={styles.sectionContainer}>
             <SectionHeading sectionName='From teaching to coding' />
             <p className={styles.text}>
-              After 5 years in the educational field and a bachelor’s degree in
-              language and literature, I changed my career to use my creativity
-              and build things that have a positive impact in people's lives
-              with innovative businesses.
+              After 5 years in the educational field and a bachelor&apos’&aposs
+              degree in language and literature, I changed my career to use my
+              creativity and build things that have a positive impact in
+              people&apos'&aposs lives with innovative businesses.
             </p>
             <Image
               src='/images/plant.png'

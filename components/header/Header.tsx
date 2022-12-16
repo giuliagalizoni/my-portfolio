@@ -45,7 +45,7 @@ const Header = () => {
           </div>
           <div className={styles.hamburger}>
             <Button btnPrimary={true} onClick={toggleHamburger}>
-              <Image src='/icons/icon-menu.svg' width={24} height={24} />
+              <Image src='/icons/icon-menu.svg' width={24} height={24} alt='' />
             </Button>
             <div
               className={hamburgerIsOpen ? `${styles.show} ` : styles.translate}

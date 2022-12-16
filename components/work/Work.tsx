@@ -16,7 +16,12 @@ const Work = ({ content }: { content: ContentListItem[] }) => {
             <Link href={`/work/${id}`}>
               <div className={styles.card}>
                 <div className={styles.test}>
-                  <img src={`/images/${id}.svg`} alt={title} />
+                  <Image
+                    src={`/images/${id}.svg`}
+                    alt={title}
+                    width={960}
+                    height={420}
+                  />
                 </div>
                 <div className={styles.textBox}>
                   <h3>{title}</h3>
