@@ -1,4 +1,4 @@
-##Giulia's portfolio 
+## Giulia's portfolio 
 
 Hi!
 This is a space to share more about my work and my studies as a web developer. 
