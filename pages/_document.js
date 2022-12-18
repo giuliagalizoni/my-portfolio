@@ -8,7 +8,7 @@ export default function Document() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta
           property='og:image:url'
-          content='/https://galizoni.com/_next/image?url=%2Fimages%2Fplant.png&w=640&q=75'
+          content='https://galizoni.com/_next/image?url=%2Fimages%2Fplant.png&w=640&q=75'
         />
         <meta
           property='og:description'
