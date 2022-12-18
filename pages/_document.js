@@ -5,15 +5,28 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
+        <link rel='icon' href='icons/favicon.ico' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta
           name='description'
-          content='Welcome to my web development portfolio! '
+          content="Giulia Galizoni's web development portfolio"
         />
         <meta property='og:url' content='galizoni.com' />
         <meta property='og:type' content='portfolio' />
         <meta property='og:title' content='Giuia Galizoni' />
-        <meta name='twitter:card' content='summary' />
-        <meta property='og:image' content='/images/link-preview.png' />
+        <meta
+          name='twitter:card'
+          title='Giulia Galizoni'
+          content='summary_large_image'
+        />
+        <meta
+          name='twitter:description'
+          content="Giulia Galizoni's web development portfolio"
+        />
+        <meta
+          property='og:image'
+          content='%PUBLIC_URL%/images/link-preview.png'
+        />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
           rel='preconnect'
@@ -25,7 +38,6 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Radio+Canada:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'
           rel='stylesheet'
         />
-        <link rel='icon' href='icons/favicon.ico' />
       </Head>
       <body>
         <Main />
