@@ -45,20 +45,12 @@
   background-color: var(--neutral-subdued);
 }
 
-/* .footerBottom::before {
-  content: '';
-  display: block;
-  height: 35px;
-  background-color: var(--neutral-default);
-  background-image: url(/images/footer-top.svg);
-  background-repeat: no-repeat;
-} */
-
 .footerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 48px 0 48px 0;
+  gap: 8px;
 }
 
 .footerStartContent {
