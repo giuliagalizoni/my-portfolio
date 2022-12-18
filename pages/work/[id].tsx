@@ -76,10 +76,11 @@ export default function Project({ postData }: { postData: ContentListItem }) {
 
           <div className={styles.border}>
             <Image
-              src={`/images/${id}.svg`}
+              src={`/images/${id}.png`}
               alt={title}
               width={960}
               height={420}
+              priority
             />
           </div>
           <div className={styles.info}>

@@ -17,10 +17,11 @@ const Work = ({ content }: { content: ContentListItem[] }) => {
               <div className={styles.card}>
                 <div className={styles.test}>
                   <Image
-                    src={`/images/${id}.svg`}
+                    src={`/images/${id}.png`}
                     alt={title}
                     width={960}
                     height={420}
+                    priority
                   />
                 </div>
                 <div className={styles.textBox}>

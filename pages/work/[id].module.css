@@ -114,4 +114,8 @@
   .bg {
     background-image: url(/images/header-post-dark.svg);
   }
+
+  .heading img {
+    filter: invert();
+  }
 }
