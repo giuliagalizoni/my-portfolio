@@ -9,7 +9,11 @@ export default function Document() {
           name='description'
           content='Welcome to my web development portfolio! '
         />
-        <meta property='og:image' content='/images/link-preview' />
+        <meta property='og:url' content='galizoni.com' />
+        <meta property='og:type' content='portfolio' />
+        <meta property='og:title' content='Giuia Galizoni' />
+        <meta name='twitter:card' content='summary' />
+        <meta property='og:image' content='/images/link-preview.png' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
           rel='preconnect'
