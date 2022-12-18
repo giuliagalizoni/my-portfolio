@@ -8,6 +8,10 @@ export default function Document() {
         <link rel='icon' href='icons/favicon.ico' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta
+          property='og:image:url'
+          content='../public/images/link-preview.png'
+        />
+        <meta
           property='og:description'
           content="Giulia Galizoni's web development portfolio"
         />
@@ -23,7 +27,6 @@ export default function Document() {
           property='twitter:description'
           content="Giulia Galizoni's web development portfolio"
         />
-        <meta property='og:image' content={linkPreviewImage} />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
           rel='preconnect'
