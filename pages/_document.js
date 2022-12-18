@@ -9,7 +9,7 @@ export default function Document() {
           name='description'
           content='Welcome to my web development portfolio! '
         />
-        <meta property='og:image' content='/images/Hero-Top.svg' />
+        <meta property='og:image' content='/images/link-preview' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
           rel='preconnect'
