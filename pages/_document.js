@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import { useRef } from 'react';
+import linkPreviewImage from '../public/images/link-preview.png';
 
 export default function Document() {
   return (
@@ -8,7 +8,7 @@ export default function Document() {
         <link rel='icon' href='icons/favicon.ico' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta
-          name='description'
+          property='og:description'
           content="Giulia Galizoni's web development portfolio"
         />
         <meta property='og:url' content='galizoni.com' />
@@ -20,13 +20,10 @@ export default function Document() {
           content='summary_large_image'
         />
         <meta
-          name='twitter:description'
+          property='twitter:description'
           content="Giulia Galizoni's web development portfolio"
         />
-        <meta
-          property='og:image'
-          content='%PUBLIC_URL%/images/link-preview.png'
-        />
+        <meta property='og:image' content={linkPreviewImage} />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
           rel='preconnect'
