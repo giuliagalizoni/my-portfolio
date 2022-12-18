@@ -7,7 +7,7 @@ export default function Document() {
         <title>Giulia Galizoni</title>
         <link rel='icon' href='icons/favicon.ico' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta property='og:image' content='../public/images/link-preview.png' />
+        <meta property='og:image' content='images/link-preview.png' />
         <meta
           property='og:description'
           content="Giulia Galizoni's web development portfolio"
