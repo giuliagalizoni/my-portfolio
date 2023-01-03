@@ -4,9 +4,7 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
-        <title>Giulia Galizoni</title>
         <link rel='icon' href='icons/favicon.ico' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta property='og:image' content='images/link-preview.png' />
         <meta
           property='og:description'
@@ -24,6 +22,7 @@ export default function Document() {
           property='twitter:description'
           content="Giulia Galizoni's web development portfolio"
         />
+
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
           rel='preconnect'

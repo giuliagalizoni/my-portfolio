@@ -41,7 +41,7 @@ export default function Project({ postData }: { postData: ContentListItem }) {
   const { title, contentHtml, tech, id, date, summary, demo, repo } = postData;
   return (
     <div className={styles.bg}>
-      <Layout>
+      <Layout pageTitle={title}>
         <Wrapper>
           <div className={styles.heading}>
             <span>
